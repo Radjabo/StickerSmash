@@ -20,5 +20,8 @@ export const boutonViewer = StyleSheet.create({
     boutonLabel: {
         color: '#fff',
         fontSize: 16,
-    }
+    },
+    boutonIcon:{
+        marginRight: 8,
+    },
 });
