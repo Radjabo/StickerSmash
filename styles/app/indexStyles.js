@@ -24,5 +24,13 @@ export const styles = StyleSheet.create({
     flex: 1 /3,
     alignItems: 'center',
   },
+  optionsContainer:{
+    position: 'absolute',
+    bottom: 80,
+  },
+  optionsRow:{
+    flexDirection: 'row',
+    alignItems: 'center',
+  }
 
 });
