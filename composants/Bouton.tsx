@@ -6,9 +6,10 @@ import { FontAwesome } from '@expo/vector-icons';
 type Props = {
     label: string;
     theme?: 'primary';
+    onPress?: () => void;
 };
 
-export default function Bouton({ label, theme }: Props) {
+export default function Bouton({ label, theme, onPress }: Props) {
     if (theme === 'primary') {
         return (
             <View style={[boutonViewer.boutonContainer, 
@@ -18,7 +19,7 @@ export default function Bouton({ label, theme }: Props) {
                     style={[boutonViewer.bouton, 
                         {backgroundColor: '#fff',}
                     ]} 
-                    onPress={() => alert('Vous avez presse un bouton.')}
+                    onPress={onPress}
                 >
                     <FontAwesome name="picture-o" size={18} color="#25292e" style={boutonViewer.boutonIcon} />
                     <Text style={[boutonViewer.boutonLabel, {color: '#25292e',}]}>{label}</Text>
